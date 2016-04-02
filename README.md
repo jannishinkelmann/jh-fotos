@@ -9,7 +9,7 @@ Used Technologies:
 - Sass CSS preprocessor (http://sass-lang.com)
 - AngularJS Framework (http://angularjs.org)
 - jQuery JavaScript library (http://jquery.com)
-- TypeScript JavaScript preprocessor (http://https://www.typescriptlang.org)
+- TypeScript JavaScript preprocessor (https://www.typescriptlang.org)
 
 External libraries like bootstrap and jQuery may be included via CDN for development. For production all librarys are hostet on the webserver.
 
