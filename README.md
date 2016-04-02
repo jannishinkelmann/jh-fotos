@@ -12,3 +12,5 @@ Used Technologies:
 - TypeScript JavaScript preprocessor
 
 External libraries like bootstrap and jQuery may be included via CDN for development. For production all librarys are hostet on the webserver.
+
+The Repository may not include processed files like css and js. Just include SASS files and AngularJS files.
