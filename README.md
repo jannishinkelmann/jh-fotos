@@ -7,9 +7,9 @@ Used Technologies:
 - "Greyscale" Stat Bootstrap theme (http://startbootstrap.com/template-overviews/grayscale/)
 - "Creative" Start Bootstrap theme (http://startbootstrap.com/template-overviews/creative/)
 - Sass CSS preprocessor (http://sass-lang.com)
-- AngularJS Framework (http://angularjs.org)
 - jQuery JavaScript library (http://jquery.com)
 - TypeScript JavaScript preprocessor (https://www.typescriptlang.org)
+- [AngularJS Framework (http://angularjs.org)] (probably too much overhead for this small project)
 
 External libraries like bootstrap and jQuery may be included via CDN for development. For production all librarys are hostet on the webserver.
 
