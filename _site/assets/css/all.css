@@ -161,17 +161,6 @@ td, th {
 /* 
   Animation: bounceOut
   Source: Bounce.Js */
-.thumb-container label .thumb-overlay {
-  height: 0%;
-  width: 0%;
-  top: 0%;
-  overflow: hidden; }
-
-.thumb-container label:hover .thumb-overlay, .clients-belt .client-unit.active-client {
-  -webkit-animation: animation 1s linear both;
-  animation: animation 1s linear both;
-  z-index: 2; }
-
 @-webkit-keyframes animation {
   0% {
     height: 0%;
@@ -375,6 +364,20 @@ td, th {
 /* Animation: fadeIn
  * Source: Dylan Spicker 
  * Rewrite: niklasravnsborg */
+.thumb-container label .thumb-overlay {
+  position: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: 800ms;
+  -moz-transition: 800ms;
+  transition: 800ms;
+  opacity: 0; }
+
+.thumb-container label:hover .thumb-overlay, .clients-belt .client-unit.active-client {
+  opacity: 1; }
+
 /* Animation: bottomUp
  * Source: Travis Nielson */
 /* Animation: none
@@ -540,20 +543,20 @@ hr {
 /* Links
  * ------------------------------------	 */
 a {
-  color: #c99065;
+  color: #45BE7B;
   text-decoration: none;
   outline: 0; }
 
 a:hover, a:focus {
-  color: #e3c6b1; }
+  color: #91d8b1; }
 
 /* Selection colors (easy to forget)
  * ------------------------------------	 */
 ::selection {
-  background: #f1e2d6; }
+  background: #b6e6cb; }
 
 ::-moz-selection {
-  background: #f1e2d6; }
+  background: #b6e6cb; }
 
 img::selection {
   background: transparent; }
@@ -562,7 +565,7 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: #f1e2d6; }
+  -webkit-tap-highlight-color: #b6e6cb; }
 
 /* Basic Styles
  * ------------------------------------	 */
@@ -580,7 +583,7 @@ svg {
   width: 100%; }
 
 h3 {
-  color: #e1c285;
+  color: #62d9b3;
   text-align: center;
   padding: 100px 0 30px; }
 
@@ -596,7 +599,7 @@ section:nth-child(odd) {
   background: #e5eaee;
   padding-bottom: 100px; }
   section:nth-child(odd) h3 {
-    color: #d7ae5c; }
+    color: #39cf9f; }
 
 h3, header nav a, header .kicker, footer .lockup .content-wrap a {
   font-size: 14px;
@@ -729,7 +732,7 @@ footer {
     background: #e5eaee;
     border-radius: 50%; }
     .face-lockup [class^="icon-"] path {
-      fill: #c99065; }
+      fill: #45BE7B; }
     .face-lockup [class^="icon-"].icon-pencil {
       -webkit-box-ordinal-group: 1;
       -moz-box-ordinal-group: 1;
@@ -802,7 +805,7 @@ footer {
       display: inline-block;
       height: 14px;
       width: 14px;
-      background-color: #c99065;
+      background-color: #45BE7B;
       margin-right: 8px;
       border-radius: 50%; }
       .skill-lockup .skill-icons span:after {
@@ -932,7 +935,7 @@ footer {
       display: -moz-flex;
       display: -ms-flexbox;
       display: flex;
-      background: rgba(201, 144, 101, 0.9);
+      background: rgba(69, 190, 123, 0.9);
       text-align: center; }
       .thumb-container label .thumb-overlay strong {
         display: block;
@@ -955,7 +958,7 @@ footer {
   position: relative;
   display: none; }
   .work-container h4, .work-container noscript h4 {
-    color: #c99065;
+    color: #45BE7B;
     font-weight: 300;
     text-transform: uppercase;
     font-size: 28px;
@@ -1062,7 +1065,7 @@ footer {
     opacity: 0.5; }
     .clients-logos .client-logo.active-client {
       opacity: 1;
-      border-bottom: 4px solid #c99065; }
+      border-bottom: 4px solid #45BE7B; }
 
 .client-quote-mark {
   position: absolute;
@@ -1073,7 +1076,7 @@ footer {
   z-index: -1;
   opacity: 0.3; }
   .client-quote-mark path {
-    fill: #c99065; }
+    fill: #45BE7B; }
 
 .client-controls {
   position: absolute;
@@ -1088,7 +1091,7 @@ footer {
     margin-top: -20px;
     cursor: pointer; }
     .client-controls > div path {
-      fill: #c99065; }
+      fill: #45BE7B; }
   .client-controls .client-control-next {
     position: absolute;
     top: 50%;
@@ -1112,7 +1115,7 @@ footer {
     margin: 0px 10px;
     cursor: pointer; }
     .clients-mobile-nav span.active-client {
-      border-color: #c99065; }
+      border-color: #45BE7B; }
 
 @media (max-width: 850px) {
   .clients-logos {
@@ -1179,11 +1182,11 @@ footer {
   flex-wrap: wrap; }
   .social-links a {
     display: block;
-    border: 2px solid #c99065;
+    border: 2px solid #45BE7B;
     height: 50px;
     width: 50px;
     line-height: 50px;
-    color: #c99065;
+    color: #45BE7B;
     border-radius: 50%;
     font-size: 28px;
     margin: 20px;
@@ -1196,7 +1199,7 @@ footer {
       right: 0px;
       bottom: 0px;
       left: 0px;
-      border: 2px solid #c99065;
+      border: 2px solid #45BE7B;
       border-radius: 50%;
       margin: -2px;
       opacity: 1;
@@ -1214,7 +1217,7 @@ footer {
 .bar {
   width: 250px;
   height: 0px;
-  border-top: 4px solid #c99065;
+  border-top: 4px solid #45BE7B;
   margin: 0px auto 50px; }
 
 .biglink {
@@ -1230,7 +1233,7 @@ form {
   margin: 0 auto 100px;
   padding: 0 20px; }
   form input, form textarea {
-    border: 3px solid #c99065;
+    border: 3px solid #45BE7B;
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1242,20 +1245,20 @@ form {
     font-size: 16px; }
     form input:focus, form textarea:focus {
       outline: none;
-      border-color: #e1c285; }
+      border-color: #62d9b3; }
   form textarea {
     height: 10em;
     resize: none; }
   form .submit-wrap {
     text-align: right; }
   form [type="submit"] {
-    background: #c99065;
+    background: #45BE7B;
     color: white;
     font-size: 18px;
     text-transform: uppercase;
     width: 33%; }
     form [type="submit"]:hover {
-      background: #e1c285; }
+      background: #62d9b3; }
   form .contact-info-group label {
     width: 50%;
     float: left;

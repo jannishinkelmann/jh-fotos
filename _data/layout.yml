@@ -1,6 +1,6 @@
 # Layout settings
 
-animation: "bounceOut"
+animation: "fadeIn"
 
 # Images
 
@@ -10,7 +10,9 @@ avatar: "travitar.jpg"
 
 # Colors
 
-accent: "#c99065"
+#accent: "c99065"
+#accent: "#5ABFD6"
+accent: "#45BE7B"
 
 textColor: "#666"
 headlineColor: "#333"
