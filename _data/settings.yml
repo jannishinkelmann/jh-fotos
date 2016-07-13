@@ -1,17 +1,17 @@
 #-------------------------------
 # General Site Settings
 
-title: Artists Theme
-description: Thinker // Designer // YouTuber
-email: devtipsfordesigners@gmail.com
+title: JH Fotos
+description: Fotografie // Videografie // Design
+email: jannis@jh-fotos.de
 
 # NOTE: The Logo and Background image are defined in the all.sass document.
 
 menu:
-- {name: About Me, url: '#about-me'}
-- {name: Work, url: '#work'}
-- {name: Clients, url: '#clients'}
-- {name: Contact, url: '#contact'}
+- {name: Über, url: '#about-me'}
+- {name: Projekte, url: '#work'}
+- {name: Partner, url: '#clients'}
+- {name: Kontakt, url: '#contact'}
 
 #-------------------------------
 # SEO Section
@@ -19,9 +19,9 @@ menu:
 # NOTE: Providing SEO information will make this website more searchable on the internet.
 
 seo:
-  description: 'Provide a description for your website to make it visible to search engines.'
-  rel-author: 'https://plus.google.com/u/0/+DevTipsForDesigners/'
-  rel-publisher: 'https://plus.google.com/u/0/+DevTipsForDesigners/'
+  description: 'JH Fotos - Offizielle Fotografie-Website von Jannis Hinkelmann'
+  rel-author: 'https://plus.google.com/u/0/+JannisHinkelmann/'
+  rel-publisher: 'https://plus.google.com/u/0/+JannisHinkelmann/'
 
 #-------------------------------
 # Google Analytics Section
@@ -39,21 +39,9 @@ seo:
 # NOTE: The avatar is defined in the all.sass document.
 
 blurb: >
-  **Travis specializes in making things** for human people.
-  Most of the things he makes are [digital interfaces](http://travisneilson.com){:target="_blank"},
-  but he also puts effort into crafting [next-level beats](http://soundcloud.com/travis-neilson){:target="_blank"}
-  and [YouTube videos](http://youtube.com/user/devtipsfordesigners){:target="_blank"} about making codes happen.
-
-
-skills:
-- {name: Communication, value: '9'}
-- {name: Organization, value: '7'}
-- {name: Learning, value: '10'}
-- {name: Teaching, value: '6'}
-- {name: Planning, value: '7'}
-- {name: Visual Design, value: '5'}
-- {name: UX Design, value: '8'}
-- {name: Programming, value: '6'}
+  **Jannis fotografiert leidenschaftlich** Events und Portrait.
+  Dabei liegt sein Fokus in der Erschaffung bleibender Erinnerungen für andere.
+  Er geht aber auch gerne seinen eigenen Ideen nach und erstellt Natur- und Landschafts-[Bilder](http://flickr.com/photos/jannis-hinkelmann){:target="_blank"}.
 
 #-------------------------------
 # Work Section
@@ -61,12 +49,6 @@ skills:
 projects:
 - {name: TYPO International Design Talks, folder: 'proj-1', file: 'work/proj-1.html'}
 - {name: City-IN website concept, folder: 'proj-2', file: 'work/proj-2.html'}
-- {name: Crispy Icons, folder: 'proj-3', file: 'work/proj-3.html'}
-- {name: Flat Mobile UI/UX Concept, folder: 'proj-4', file: 'work/proj-4.html'}
-- {name: Fresh It Up, folder: 'proj-5', file: 'work/proj-5.html'}
-- {name: Timeline Page, folder: 'proj-6', file: 'work/proj-6.html'}
-- {name: Weather Dashboard, folder: 'proj-7', file: 'work/proj-7.html'}
-- {name: Stripes & Co, folder: 'proj-8', file: 'work/proj-8.html'}
 
 
 
@@ -101,11 +83,8 @@ clients:
 # Contact Section
 
 social:
-- {icon: 'twitter', link: 'http://twitter.com/devtipsshow'}
-- {icon: 'dribbble', link: 'https://dribbble.com/travisneilson'}
-- {icon: 'behance', link: 'https://www.behance.net/travisneilson'}
-- {icon: 'youtube', link: 'https://www.youtube.com/DevTipsForDesigners'}
-- {icon: 'linkedin', link: 'http://www.linkedin.com/in/travisneilson/'}
-
+- {icon: 'twitter', link: 'http://twitter.com/j_hinkelmann'}
+- {icon: 'facebook', link: 'https://facebook.com/jannishinkelmann'}
+- {icon: 'google-plus', link: 'https://plus.google.com/jannishinkelmann'}
 
 # social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'

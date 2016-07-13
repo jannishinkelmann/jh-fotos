@@ -6,15 +6,18 @@ animation: "fadeIn"
 
 logo: "logo.svg"
 hero: "hero-bg.jpg"
-avatar: "travitar.jpg"
+hero-footer: "hero-bg-footer.jpg"
+avatar: "avatar.jpg"
 
 # Colors
 
-#accent: "c99065"
+#accent: "lighten(#c99065, 10%)"
 #accent: "#5ABFD6"
 accent: "#45BE7B"
+#accent: "#333"
+#accent: "#bfbbd9"
 
-textColor: "#666"
-headlineColor: "#333"
-bgcolor: "#e5eaee"
-documentBackgroundColor: "#fff"
+textColor: "#DDD"
+headlineColor: "#EEE"
+bgcolor: "#313038"
+documentBackgroundColor: "#222"

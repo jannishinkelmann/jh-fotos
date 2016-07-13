@@ -1,12 +1,18 @@
-<header id="header">
+<header id="header" class="section">
+  <div class="content-wrapper">
+    <nav>
+      {% for item in site.data.settings.menu %}
+        <a href="{{ item.url }}">{{ item.name }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+  <div class="content">
+    <!--<h1><span>{{ site.data.settings.title }}</span></h1>-->
+    <div class="main-logo"> {% include icons/jh-logo-hell.html %} </div>
+    <p class="kicker">{{ site.data.settings.description }}</p>
 
-  <nav>
-    {% for item in site.data.settings.menu %}
-      <a href="{{ item.url }}">{{ item.name }}</a>
-    {% endfor %}
-  </nav>
-
-  <h1><span>{{ site.data.settings.title }}</span></h1>
-  <p class="kicker">{{ site.data.settings.description }}</p>
-
+    <a href="#about-me" class="button-scroll">
+      <div class="icon"> {% include icons/icon-scroll.html %} </div>
+    </a>
+  </div>
 </header>

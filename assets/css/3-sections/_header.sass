@@ -1,10 +1,41 @@
 header
   @extend %background-image
   background:
-    position: 30px 20px, 50% 50%
+    position: 10% 20px, 50% 50%
     image: url(../img/#{$logo-path}), url(../img/#{$hero-path})
   padding-bottom: 50px
+  height: 100%
+  position: relative
 
+  .main-logo
+    height: 50%
+
+
+  .content
+    position: absolute
+    bottom: 0
+    height: 50%
+    width: 100%
+    margin-bottom: 80px
+
+
+  .button-scroll
+    +size(40px 40px)
+    position: relative
+    margin: 50px auto
+    display: block
+
+    .icon
+      +size(40px 40px)
+
+      path
+        fill: #bbb
+        //fill: $accent
+
+    &:hover
+      .icon path
+        fill: #fff
+        //fill: $accent-light
 
   .logo
     +size(50px)
@@ -21,6 +52,8 @@ header
     a
       display: inline-block
       margin-left: 20px
+      padding: 5px 12px
+      background-color: rgba(255,255,255,0.2)
 
       color: rgba(0,0,0,0.7)
       @extend %small-bold
@@ -38,7 +71,6 @@ header
     letter-spacing: 0.05em
     margin-bottom: 20px
     clear: both
-    padding-top: 100px
 
 
     span
@@ -48,6 +80,7 @@ header
 
   .kicker
     @extend %small-bold
+    margin: 20px auto
     text-align: center
     letter-spacing: 0.05em
     color: white
@@ -63,5 +96,15 @@ header
       text-align: center
       padding-top: 90px
 
+      a
+        margin-bottom: 5px
+
     h1
       padding-top: 0px
+
+    .main-logo
+      width: auto
+      margin: 15px
+
+    .button-scroll
+      margin: 0 auto

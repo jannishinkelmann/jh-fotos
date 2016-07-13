@@ -1,16 +1,24 @@
-<section class="section-contact">
+<section class="section section-contact">
+  <div class="content-wrapper">
+    <h3 id="contact">Kontakt</h3>
 
-  <h3 id="contact">Contact</h3>
+    <div class="adress">
+      <span class="name">Jannis Hinkelmann</span>
+      <span class="street">Auf Krämel 45</span>
+      <span class="city">67742 Lauterecken</span>
+    </div>
+
+    <hr class="bar">
 
 
-  <div class="social-links">
-    {% for link in site.data.settings.social %}
-    <a href="{{ link.link }}" class="icon-{{ link.icon }}"></a>
-    {% endfor %}
+    <div class="social-links">
+      {% for link in site.data.settings.social %}
+      <a href="{{ link.link }}" class="icon-{{ link.icon }}"></a>
+      {% endfor %}
+    </div>
+
+    <hr class="bar">
+
+    <a class="biglink" href="mailto:{{ site.data.settings.email }}">{{ site.data.settings.email }}</a>
   </div>
-
-  <hr class="bar">
-
-  <a class="biglink" href="mailto:{{ site.data.settings.email }}">{{ site.data.settings.email }}</a>
-
 </section>

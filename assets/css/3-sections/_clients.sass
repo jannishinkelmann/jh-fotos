@@ -1,6 +1,20 @@
 .section-clients
   position: relative
 
+.clients-wrap
+  display: flex
+  align-items: baseline
+  justify-content: space-around
+  min-height: 320px
+
+  .client-control
+    +size(40px)
+    cursor: pointer
+    margin: 30px
+
+    path
+      fill: $accent
+
 .clients-belt
   width: 100%
   position: relative
@@ -19,6 +33,7 @@
     .client-face
       min-width: 180px
       text-align: center
+      margin-left: 0
 
       img
         max-width: 100px
@@ -82,22 +97,11 @@
 
 // Controls
 .client-controls
-  +position(absolute, 0px 0px 0px 0px)
+  //+position(absolute, 0px 0px 0px 0px)
   z-index: 2
 
-  > div
-    +size(40px)
-    margin-top: -20px
-    cursor: pointer
 
-    path
-      fill: $accent
 
-  .client-control-next
-    +position(absolute, 50% 10px null null)
-
-  .client-control-prev
-    +position(absolute, 50% null null 10px)
 
 // clients-mobile-nav
 .clients-mobile-nav
@@ -120,9 +124,13 @@
 
 
 
-@media (max-width: 850px)
+@media (max-width: 940px)
   .clients-logos
     +flex-wrap(wrap)
+
+
+  .clients-wrap
+    min-height: 520px
 
   .clients-belt
     overflow-x: hidden
@@ -135,6 +143,8 @@
 
       .client-face
         margin-bottom: 30px
+        margin-right: 0
+        margin-top: 0
 
       .client-content
         padding: 0px 30px
@@ -147,10 +157,9 @@
   .clients-logos
     display: none
 
+
   .clients-mobile-nav
     display: block
 
-
-@media (max-width: 600px)
-  .client-controls
+  .client-control
     display: none

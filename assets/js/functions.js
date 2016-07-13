@@ -33,7 +33,7 @@ function workBelt() {
 
   $('.thumb-container label').click(function() {
     $('.work-belt').addClass("slided");
-    $('.work-container').show();
+    $('.work-container').show(600);
   });
 
   $('.work-return').click(function() {
