@@ -1,6 +1,6 @@
 <section class="section">
   <div class="content-wrapper">
-    <h3>Lass uns miteinander arbeiten</h3>
+    <h3 id="form">Lass uns miteinander arbeiten</h3>
 
     <form method="POST" action="//formspree.io/{{ site.data.settings.email }}">
 
@@ -9,6 +9,9 @@
         <label><span>Dein Name</span>
         <input type="text" name="name"></label>
 
+        <label style="display:none"><span>Email</span>
+        <input type="text" name="_gotcha"></label>
+
         <label><span>Deine Email-Adresse</span>
         <input type="email" name="_replyto"></label>
 
@@ -16,6 +19,9 @@
 
       <label><span>Erzähl' mir von deinem Projekt</span>
       <textarea name="message"></textarea></label>
+
+      <input type="hidden" name="_format" value="plain">
+      <input type="hidden" name="_next" value="/form-success/">
 
       <fieldset class="submit-wrap">
         <input type="submit" value="Senden">

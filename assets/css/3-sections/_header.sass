@@ -34,8 +34,8 @@ header
 
     &:hover
       .icon path
-        fill: #fff
-        //fill: $accent-light
+        //fill: #fff
+        fill: $accent-light
 
   .logo
     +size(50px)
@@ -51,15 +51,17 @@ header
 
     a
       display: inline-block
-      margin-left: 20px
-      padding: 5px 12px
-      background-color: rgba(255,255,255,0.2)
+      margin-left: 15px
+      padding: 2px 9px
+      background-color: rgba(255,255,255,0.3)
 
-      color: rgba(0,0,0,0.7)
+      color: rgba(0,0,0,.8)
       @extend %small-bold
 
       &:hover
         color: rgba(0,0,0,1)
+        //color: $accent
+        background-color: rgba(255,255,255,0.5)
 
   h1
     text-align: center

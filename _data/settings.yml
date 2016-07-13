@@ -2,7 +2,7 @@
 # General Site Settings
 
 title: JH Fotos
-description: Fotografie // Videografie // Design
+description: Fotografie // Videografie
 email: jannis@jh-fotos.de
 
 # NOTE: The Logo and Background image are defined in the all.sass document.
@@ -10,7 +10,7 @@ email: jannis@jh-fotos.de
 menu:
 - {name: Über, url: '#about-me'}
 - {name: Projekte, url: '#work'}
-- {name: Partner, url: '#clients'}
+#- {name: Partner, url: '#clients'}
 - {name: Kontakt, url: '#contact'}
 
 #-------------------------------
@@ -47,8 +47,13 @@ blurb: >
 # Work Section
 
 projects:
-- {name: TYPO International Design Talks, folder: 'proj-1', file: 'work/proj-1.html'}
-- {name: City-IN website concept, folder: 'proj-2', file: 'work/proj-2.html'}
+
+- {name: Herbstfarben, folder: 'jessi', file: 'work/proj-jessi.html'}
+- {name: Sommerabend-Stimmung, folder: 'anna', file: 'work/proj-anna.html'}
+- {name: Broken Honesty, folder: 'brokenhonesty', file: 'work/proj-brokenhonesty.html'}
+- {name: Brixten, folder: 'brixten', file: 'work/proj-brixten.html'}
+- {name: FadeOut, folder: 'fadeoutphoto', file: 'work/proj-fadeoutphoto.html'}
+- {name: Videodreh mit FadeOut, folder: 'fadeoutvideo', file: 'work/proj-fadeoutvideo.html'}
 
 
 
@@ -72,11 +77,6 @@ clients:
   title: 'Social Media Girl, Quebec Int.',
   quote: '<p><strong>Yea, I guess hes good at computers or something,</strong> but let me ask you this: If a cat always lands on its feet, and buttered bread always lands butter side down, what would happen if you tied buttered bread on top of a cat?</p>',
   logo: 'logo3.png'}
-- {avatar: 'face-teleject.jpg',
-  name: 'Cleatus Cassidy',
-  title: 'VP of Helmut, Lorem Sorem LLC.',
-  quote: '<p><strong>Back in old country</strong> only nerds who is playing on computers. Now all bros is wanting to make codes and junk. I lost foot in war. You dont see girls asking me about homework.</p>',
-  logo: 'logo4.png'}
 
 
 #-------------------------------
@@ -85,6 +85,5 @@ clients:
 social:
 - {icon: 'twitter', link: 'http://twitter.com/j_hinkelmann'}
 - {icon: 'facebook', link: 'https://facebook.com/jannishinkelmann'}
-- {icon: 'google-plus', link: 'https://plus.google.com/jannishinkelmann'}
 
 # social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'

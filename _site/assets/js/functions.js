@@ -4,8 +4,8 @@ $(function() {
 	workLoad();
 	clientStuff();
 
-	$("header h1").fitText(1, { minFontSize: '20px', maxFontSize: '72px' });
-	$(".biglink").fitText(1.5);
+	$("h1").fitText(1, { minFontSize: '20px', maxFontSize: '72px' });
+	$(".biglink").fitText(1, { maxFontSize: '66px'});
 
 	$('textarea').autosize();
 });
@@ -27,18 +27,25 @@ function smoothScroll (duration) {
 
 
 function workBelt() {
-
   $(".trigger").remove();
   $(".return").remove();
 
   $('.thumb-container label').click(function() {
     $('.work-belt').addClass("slided");
-    $('.work-container').show(600);
+    $('.work-container').show(600).delay(300);
+    $('html, body').animate({
+      scrollTop: $("#work").offset().top
+    }, 1000);
+    $('.thumb-container').hide(1000);
   });
 
   $('.work-return').click(function() {
     $('.work-belt').removeClass("slided");
-    $('.work-container').hide(800);
+    $('.thumb-container').show(600).delay(300);
+    $('html, body').animate({
+      scrollTop: $("#work").offset().top
+    }, 1000);
+    $('.work-container').hide(1000);
   });
 
 }

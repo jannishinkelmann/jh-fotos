@@ -31,12 +31,18 @@
   &.slided
     +transform(translate3d(-50%, 0, 0))
 
-.thumb-wrap, .work-wrap
+.thumb-wrap
   width: 50%
   float: left
 
+.work-wrap
+  width: 50%
+  float: right
+
 .thumb-container
-  display: block
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
   max-width: 960px
   margin: 0px auto
   +clearfix
@@ -45,7 +51,7 @@
     position: relative
     display: block
     float: left
-    width: 50%
+    width: 33%
     cursor: pointer
 
     .thumb-unit
@@ -56,7 +62,10 @@
         display: block
         max-width: 100%
 
-    @media screen and (max-width: 760px)
+    @media screen and (max-width: 640px)
+      width: 50%
+
+    @media screen and (max-width: 360px)
       width: 100%
 
     .thumb-overlay
@@ -64,14 +73,14 @@
       +align-items(center)
       +justify-content(space-around)
       +display(flex)
-      background: fade-out($accent, 0.1)
+      background: fade-out($documentBackgroundColor, 0.05)
       text-align: center
       @extend %animationstart_#{$animation}
 
       strong
         display: block
         padding: 0 9%
-        color: white
+        color: $accent-light
         font:
           weight: 300
           size: 24px
@@ -117,6 +126,9 @@
 
     &:hover
       opacity: 1
+
+  .work-return-end
+    +position(absolute, auto auto -80px auto)
 
 
 
