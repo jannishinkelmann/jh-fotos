@@ -13,9 +13,9 @@
 
     <div class="social-links">
       {% for link in site.data.settings.social %}
-      <a href="{{ link.link }}" class="icon-{{ link.icon }}"></a>
+      <a href="{{ link.link }}" target="_blank" class="icon-{{ link.icon }}"></a>
       {% endfor %}
-      <a href="http://flickr.com/photos/jannis-hinkelmann" class="icon-flickr">
+      <a href="http://flickr.com/people/jannis-hinkelmann" target="_blank" class="icon-flickr">
         {% include icons/icon-flickr.html %}
       </a>
     </div>
