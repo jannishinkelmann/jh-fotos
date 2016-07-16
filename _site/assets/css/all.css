@@ -1020,7 +1020,8 @@ footer {
     margin: 0 0 20px; }
   .work-container .project-load img {
     max-width: 100%;
-    margin: 20px auto; }
+    margin: 20px auto;
+    cursor: pointer; }
   .work-container .work-return {
     height: 40px;
     width: 40px;
@@ -1056,33 +1057,57 @@ section.image-view-box {
   position: fixed;
   height: 100%;
   width: 100%;
-  background-color: black;
-  opacity: 0.95;
+  background-color: #111;
   top: 0px;
   left: 0px;
   z-index: 2; }
-  section.image-view-box .icon-cross {
+  section.image-view-box .icon {
     position: relative;
+    z-index: 4;
+    height: 40px;
+    width: 40px;
+    margin: auto;
+    opacity: 0.7;
+    cursor: pointer; }
+    section.image-view-box .icon path {
+      fill: white; }
+    section.image-view-box .icon:hover {
+      opacity: 1; }
+  section.image-view-box .button-inactive {
+    cursor: default;
+    opacity: 0.5; }
+    section.image-view-box .button-inactive path {
+      fill: grey; }
+    section.image-view-box .button-inactive:hover {
+      opacity: 0.5; }
+  section.image-view-box .icon-cross {
     top: 30px;
     right: 30px;
     height: 20px;
     width: 20px;
-    margin: auto;
     float: right;
     border: 2px solid white;
-    border-radius: 50%;
-    opacity: 0.5;
-    cursor: pointer; }
-    section.image-view-box .icon-cross path {
-      fill: white; }
-    section.image-view-box .icon-cross:hover {
-      opacity: 0.7; }
-  section.image-view-box img {
-    display: block;
-    position: relative;
-    min-width: 90%;
+    border-radius: 50%; }
+  section.image-view-box .nav-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    position: fixed;
+    width: 100%;
     height: auto;
-    margin: auto 20px; }
+    bottom: 20px; }
+  section.image-view-box .img-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 90%;
+    margin: 40px;
+    margin-bottom: 80px; }
+    section.image-view-box .img-wrap img {
+      max-height: 90%;
+      max-width: 90%;
+      box-shadow: 20px 20px 10px black; }
 
 @media (max-width: 740px) {
   .work-container .work-return {

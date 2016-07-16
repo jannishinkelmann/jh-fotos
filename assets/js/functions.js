@@ -172,19 +172,69 @@ function clientStuff() {
 })( jQuery );
 
 function fullscreenImage(){
+  $(".project-load img").unbind('click');
   $('.project-load img').click(function(){
-    var $this = $(this);
+    var currentImgObj = $(this),
+        imgSrc = currentImgObj.attr('src');
+    currentImgObj.addClass('active-view');
+    $('section.image-view-box img').attr('src', imgSrc);
     $('html').addClass('overlayed');
     $('section.image-view-box').fadeIn();
     document.ontouchmove = function(event){
       event.preventDefault();
     }
+    setNavButtonState();
   });
+
+  $("section.image-view-box .icon-cross").unbind('click');
   $('section.image-view-box .icon-cross').click(function(){
     $('section.image-view-box').fadeOut();
     $('html').removeClass('overlayed');
+    $('.project-load img.active-view').removeClass('active-view');
     document.ontouchmove = function(event){
       event.default();
+    }
+  });
+
+  function setNavButtonState(){
+    var currentImgObj = $('.project-load img.active-view');
+
+    if (currentImgObj.parent().prev().children('img:only-child').length == 0){
+      $("section.image-view-box .icon-prev").addClass('button-inactive');
+    }
+    else {
+      $("section.image-view-box .icon-prev").removeClass('button-inactive');
+    }
+
+    if (currentImgObj.parent().next().children('img:only-child').length == 0){
+      $("section.image-view-box .icon-next").addClass('button-inactive');
+    }
+    else {
+      $("section.image-view-box .icon-next").removeClass('button-inactive');
+    }
+  }
+
+  $("section.image-view-box .icon-prev").unbind('click');
+  $('section.image-view-box .icon-prev').click(function(){
+    var currentImgObj = $('.project-load img.active-view');
+    var newImgObj = currentImgObj.parent().prev().children('img:only-child');
+    if (newImgObj.length > 0) {
+      $('section.image-view-box img').attr('src', newImgObj.attr('src'));
+      currentImgObj.removeClass('active-view');
+      newImgObj.addClass('active-view');
+      setNavButtonState();
+    }
+  });
+
+  $("section.image-view-box .icon-next").unbind('click');
+  $('section.image-view-box .icon-next').click(function(){
+    var currentImgObj = $('.project-load img.active-view');
+    var newImgObj = currentImgObj.parent().next().children('img:only-child');
+    if (newImgObj.length > 0) {
+      $('section.image-view-box img').attr('src', newImgObj.attr('src'));
+      currentImgObj.removeClass('active-view');
+      newImgObj.addClass('active-view');
+      setNavButtonState();
     }
   });
 }
