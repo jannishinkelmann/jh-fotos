@@ -936,8 +936,9 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 960px;
-  margin: 0px auto; }
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 10px; }
   .thumb-container:after {
     content: "";
     display: table;
@@ -955,7 +956,7 @@ footer {
       .thumb-container label .thumb-unit img {
         display: block;
         max-width: 100%; }
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 720px) {
       .thumb-container label {
         width: 50%; } }
     @media screen and (max-width: 360px) {
@@ -1043,84 +1044,24 @@ footer {
     bottom: auto;
     left: auto;
     margin: 50px auto auto;
-    border: 1px solid #45BE7B;
-    color: #45BE7B; }
+    color: #45BE7B;
+    opacity: 0.7; }
     .work-container .work-return-end path {
       fill: #45BE7B; }
+    .work-container .work-return-end:hover {
+      color: #62d9b3; }
+      .work-container .work-return-end:hover path {
+        fill: #62d9b3; }
     .work-container .work-return-end span.returnico-wrap {
       width: 40px;
       height: 40px;
       margin-right: 10px; }
 
-section.image-view-box {
-  display: none;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background-color: #111;
-  top: 0px;
-  left: 0px;
-  z-index: 2; }
-  section.image-view-box .icon {
-    position: relative;
-    z-index: 4;
-    height: 40px;
-    width: 40px;
-    margin: auto;
-    opacity: 0.7;
-    cursor: pointer; }
-    section.image-view-box .icon path {
-      fill: white; }
-    section.image-view-box .icon:hover {
-      opacity: 1; }
-  section.image-view-box .button-inactive {
-    cursor: default;
-    opacity: 0.5; }
-    section.image-view-box .button-inactive path {
-      fill: grey; }
-    section.image-view-box .button-inactive:hover {
-      opacity: 0.5; }
-  section.image-view-box .icon-cross {
-    top: 30px;
-    right: 30px;
-    height: 20px;
-    width: 20px;
-    float: right;
-    border: 2px solid white;
-    border-radius: 50%; }
-  section.image-view-box .nav-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    position: fixed;
-    width: 100%;
-    height: auto;
-    bottom: 20px; }
-  section.image-view-box .img-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    max-height: 90%;
-    margin: 40px;
-    margin-bottom: 80px; }
-    section.image-view-box .img-wrap img {
-      max-height: 90%;
-      max-width: 90%;
-      box-shadow: 20px 20px 10px black; }
-
 @media (max-width: 740px) {
   .work-container .work-return {
     left: 0px; }
   .work-container h4 {
-    margin-left: 60px; }
-
-  section.image-view-box .icon-cross {
-    right: 10px;
-    top: 10px; } }
-.overlayed {
-  overflow-y: hidden; }
-
+    margin-left: 60px; } }
 .section-clients {
   position: relative; }
 
@@ -1445,3 +1386,68 @@ html, body {
     margin: 15px 40px; }
   .form-success p {
     font-size: 18px; }
+
+.overlayed {
+  overflow-y: hidden; }
+
+section.image-view-box {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #111;
+  top: 0px;
+  left: 0px;
+  z-index: 2; }
+  section.image-view-box .icon {
+    position: relative;
+    z-index: 4;
+    height: 40px;
+    width: 40px;
+    margin: auto;
+    opacity: 0.7;
+    cursor: pointer; }
+    section.image-view-box .icon path {
+      fill: white; }
+    section.image-view-box .icon:hover {
+      opacity: 1; }
+  section.image-view-box .button-inactive {
+    cursor: default;
+    opacity: 0.5; }
+    section.image-view-box .button-inactive path {
+      fill: grey; }
+    section.image-view-box .button-inactive:hover {
+      opacity: 0.5; }
+  section.image-view-box .icon-cross {
+    top: 30px;
+    right: 30px;
+    height: 20px;
+    width: 20px;
+    float: right;
+    border: 2px solid white;
+    border-radius: 50%; }
+  section.image-view-box .nav-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    bottom: 20px; }
+  section.image-view-box .img-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 90%;
+    margin: 40px;
+    margin-bottom: 80px; }
+    section.image-view-box .img-wrap img {
+      max-height: 90%;
+      max-width: 90%;
+      box-shadow: 20px 20px 10px black; }
+
+@media (max-width: 740px) {
+  section.image-view-box .icon-cross {
+    right: 10px;
+    top: 10px; } }
