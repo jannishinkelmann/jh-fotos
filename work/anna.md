@@ -1,8 +1,8 @@
 ---
-title: Typo International Design Talks Stuff
 ---
 
+![Sommerabend-Stimmung](assets/img/work/anna/anna1.jpg)
 
-<!--![Typo International](assets/img/work/proj-1/img1.jpg)-->
+![Sommerabend-Stimmung](assets/img/work/anna/anna2.jpg)
 
-TYPO: International Design Talks is an annual event held in Berlin, London, and San Francisco. This promotional project is developed to market the event for the designindustry. The use of patterns, sophisticated color scheme and typography are applied for the print and mobile application.
+![Sommerabend-Stimmung](assets/img/work/anna/anna3.jpg)

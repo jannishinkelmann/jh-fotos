@@ -44,12 +44,12 @@ blurb: >
   Er geht aber auch gerne seinen eigenen Ideen nach und postet Natur- und Landschaftsbilder.
 
 skills:
-- {name: Ideen & Kreativität, value: 5}
-- {name: Kommunikation, value: 6}
-- {name: Bildgestaltung, value: 7}
-- {name: Nachbearbeitung, value: 5}
-- {name: Lernfähigkeit, value: 6}
-- {name: Zuverlässigkeit, value: 8}
+- {name: Ideen & Kreativität, value: 6}
+- {name: Kommunikation, value: 7}
+- {name: Bildgestaltung, value: 8}
+- {name: Nachbearbeitung, value: 6}
+- {name: Lernfähigkeit, value: 7}
+- {name: Zuverlässigkeit, value: 9}
 
 #-------------------------------
 # Work Section

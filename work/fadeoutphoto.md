@@ -1,5 +1,16 @@
 ---
-title: Flat Mobile UI/UX Concept
 ---
 
-TYPO: International Design Talks is an annual event held in Berlin, London, and San Francisco. This promotional project is developed to market the event for the designindustry. The use of patterns, sophisticated color scheme and typography are applied for the print and mobile application.
+![FadeOut](assets/img/work/fadeoutphoto/fadeout1.jpg)
+
+![FadeOut](assets/img/work/fadeoutphoto/fadeout2.jpg)
+
+![FadeOut](assets/img/work/fadeoutphoto/fadeout3.jpg)
+
+![FadeOut](assets/img/work/fadeoutphoto/fadeout4.jpg)
+
+![FadeOut](assets/img/work/fadeoutphoto/fadeout5.jpg)
+
+![FadeOut](assets/img/work/fadeoutphoto/fadeout6.jpg)
+
+![FadeOut](assets/img/work/fadeoutphoto/fadeout7.jpg)
