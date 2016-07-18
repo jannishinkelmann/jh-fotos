@@ -1,0 +1,37 @@
+---
+---
+
+<!DOCTYPE html>
+<html class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.data.settings.seo.description }}">
+  <meta rel="author" href="{{ site.data.settings.seo.rel-author }}">
+  <meta rel="publisher" href="{{ site.data.settings.seo.rel-publisher }}">
+
+  <title>{{ site.data.settings.title }}</title>
+
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  {% include analytics.html %}
+</head>
+<body class="data-policy">
+  <section class="section">
+    <a href="#" class="icon icon-cross"> {% include icons/icon-cross.html %} </div></a>
+
+    <h1>Datenschutzerklärung</h1>
+    <h2>Kontaktformular</h2>
+    <p>Zur Übermittlung der Daten aus dem Kontaktformular verwenden wir den externen Service <a href="https://formspree.io">Formspree</a>, wofür deren Datenschutzbestimmungen gelten. Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+  </section>
+
+  <script src="../assets/js/jquery/dist/jquery.min.js"></script>
+  <script>
+    $('.data-policy a.icon-cross').click(function(){
+      window.close();
+    });
+  </script>
+</body>
+</html>
