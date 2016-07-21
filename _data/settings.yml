@@ -19,9 +19,9 @@ menu:
 # NOTE: Providing SEO information will make this website more searchable on the internet.
 
 seo:
-  description: 'JH Fotos - Offizielle Fotografie-Website von Jannis Hinkelmann'
-  rel-author: 'https://plus.google.com/u/0/+JannisHinkelmann/'
-  rel-publisher: 'https://plus.google.com/u/0/+JannisHinkelmann/'
+  description: 'Offizielle Website von Jannis Hinkelmann, Fotograf aus Lauterecken'
+  rel-author: 'https://plus.google.com/u/0/115849271503758637116/'
+  rel-publisher: 'https://plus.google.com/u/0/115849271503758637116/'
 
 #-------------------------------
 # Google Analytics Section
@@ -39,7 +39,7 @@ seo:
 # NOTE: The avatar is defined in the all.sass document.
 
 blurb: >
-  **Jannis fotografiert leidenschaftlich** Events und Portrait.
+  **Jannis fotografiert leidenschaftlich** *Events* und *Portrait*.
   Dabei liegt sein Fokus in der Schaffung bleibender Erinnerungen für andere.
   Er geht aber auch gerne seinen eigenen Ideen nach und postet Natur- und Landschaftsbilder.
 
@@ -58,9 +58,9 @@ projects:
 
 - {name: Herbstfarben, folder: 'jessi', file: 'work/proj-jessi.html'}
 - {name: Sommerabend-Stimmung, folder: 'anna', file: 'work/proj-anna.html'}
+- {name: FadeOut, folder: 'fadeoutphoto', file: 'work/proj-fadeoutphoto.html'}
 - {name: Broken Honesty, folder: 'brokenhonesty', file: 'work/proj-brokenhonesty.html'}
 - {name: Brixten, folder: 'brixten', file: 'work/proj-brixten.html'}
-- {name: FadeOut, folder: 'fadeoutphoto', file: 'work/proj-fadeoutphoto.html'}
 - {name: Videodreh mit FadeOut, folder: 'fadeoutvideo', file: 'work/proj-fadeoutvideo.html'}
 
 

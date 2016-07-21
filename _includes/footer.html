@@ -2,7 +2,9 @@
 
   <div class="lockup content-wrapper">
 
+    <div class="logo">{% include icons/logo.html %}</div>
     <div class="content-wrap">
+
       <nav>
         {% for item in site.data.settings.menu %}
           <a href="{{ item.url }}">{{ item.name }}</a>

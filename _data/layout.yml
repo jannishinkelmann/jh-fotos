@@ -11,11 +11,12 @@ avatar: "avatar.jpg"
 
 # Colors
 
-#accent: "lighten(#c99065, 10%)"
+accent: "lighten(#c99065, 10%)"
 #accent: "#5ABFD6"
-accent: "#45BE7B"
+#accent: "#45BE7B"
 #accent: "#333"
 #accent: "#bfbbd9"
+#accent: "lighten(#d19a66, 5%)"
 
 textColor: "#DDD"
 headlineColor: "#EEE"

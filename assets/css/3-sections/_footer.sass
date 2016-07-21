@@ -5,9 +5,19 @@ footer
     padding: 50px 30px
     +clearfix
 
+    .logo
+      float: left
+      display: inline-block
+      +size(50px)
+      margin: 10px 0 0 30px
+      svg g path
+        fill: rgba(0,0,0,1)
+      svg g circle
+        fill: white
+
     .content-wrap
       float: left
-
+      margin-left: 40px
 
       .copyright
         margin-top: 10px
@@ -32,3 +42,12 @@ footer
 
           &:hover
             color: rgba(255,255,255,0.9)
+
+
+  @media (max-width: 640px)
+    .lockup
+      .logo
+        display: none
+
+      .content-wrap
+        margin-left: 0

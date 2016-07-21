@@ -118,6 +118,7 @@ h3
   color: $accent-light
   text-align: center
   padding: 100px 0 30px
+  margin: 0
 
 fieldset
   padding: 0
@@ -131,6 +132,12 @@ fieldset
 section:nth-child(odd)
   background: $bgcolor
   padding-bottom: 120px
-
   h3
     color: darken($accent-light, 10%)
+
+section:nth-child(even)
+  background: $documentBackgroundColor
+
+section
+  position: relative
+  z-index: 1

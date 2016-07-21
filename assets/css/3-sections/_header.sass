@@ -1,29 +1,44 @@
 header
-  @extend %background-image
-  background:
-    position: 10% 20px, 50% 50%
-    image: url(../img/#{$logo-path}), url(../img/#{$hero-path})
-  padding-bottom: 50px
-  height: 100%
   position: relative
+  height: 100%
+
+  .background-wrapper
+    background:
+      position: 50% 0
+      repeat: no-repeat
+      size: cover
+      image: url(../img/#{$hero-path})
+      //attachment: fixed
+      blend-mode: normal
+    +position(fixed, 0 0 0 0)
+    //+filter(blur(100px))
+    z-index: -5
+    overflow: hidden
 
   .main-logo
-    height: 50%
+    max-height: 50%
+    //background-color: rgba(0,0,0,0.7)
+    padding: 10px
 
 
   .content
     position: absolute
-    bottom: 0
-    height: 50%
-    width: 100%
-    margin-bottom: 80px
+    display: inline-block
+    top: 50%
+    left: 50%
+    margin-top: -100px
+    margin-left: -150px
+    width: 300px
+    height: auto
 
 
   .button-scroll
     +size(40px 40px)
     position: relative
-    margin: 50px auto
+    margin: 50px auto 0
     display: block
+    overflow: visible
+    z-index: 0
 
     .icon
       +size(40px 40px)
@@ -38,17 +53,18 @@ header
         fill: $accent-light
 
   .logo
+    display: none
     +size(50px)
     float: left
     margin: 10px 0 0 30px
-
-    path
-      fill: rgba(0,0,0,0.4)
-
+    svg g path
+      fill: rgba(0,0,0,1)
+    svg g circle
+      fill: rgba(255,255,255,0.7)
   nav
-    float: right
-    padding: 30px 30px 0 0
-
+    padding: 30px 15px 0 0
+    position: absolute
+    min-width: 90%
     a
       display: inline-block
       margin-left: 15px
@@ -90,13 +106,17 @@ header
 
 @media (max-width: 640px)
   header
-    background:
-      position: 50% 20px, 50% 50%
+    .logo
+      left: 50%
+      top: 20px
+      +transform(translate(-50%, 0))
+      margin: 0
 
-    nav
+    .content-wrapper nav
       float: none
       text-align: center
-      padding-top: 90px
+      left: 50%
+      +transform(translate(-50%, 0))
 
       a
         margin-bottom: 5px

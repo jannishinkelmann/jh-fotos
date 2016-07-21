@@ -58,11 +58,17 @@
     .thumb-unit
       display: block
       overflow: hidden
-      margin: 10px
 
       img
         display: block
         max-width: 100%
+        //filter: blur(0px) brightness(100%)
+        +filter(blur(0px) brightness(100%) saturate(100%))
+        +transition(filter 400ms)
+
+      &.grey
+        img
+          +filter(blur(5px) brightness(50%) saturate(30%))
 
     @media screen and (max-width: 720px)
       width: 50%
@@ -75,26 +81,29 @@
       +align-items(center)
       +justify-content(space-around)
       +display(flex)
-      background: fade-out($documentBackgroundColor, 0.1)
+      display: none
+      //background: fade-out($accent, 1)
       text-align: center
       @extend %animationstart_#{$animation}
-      margin: 10px
 
       strong
         display: block
         padding: 0 9%
-        color: $accent-light
+        color: white
         font:
-          weight: 300
+          weight: 400
           size: 24px
         text-transform: uppercase
         line-height: 1.2
 
     &:hover
-      z-index: 2
-
       .thumb-overlay
+        z-index: 2
         @extend %#{$animation}
+
+      .thumb-unit
+        img
+          +filter(blur(0px) brightness(110%) saturate(100%))
 
 
 .work-container
@@ -107,7 +116,7 @@
   display: none
 
   h4, noscript h4
-    color: $accent
+    color: $accent-light
     font-weight: 300
     text-transform: uppercase
     font-size: 28px
