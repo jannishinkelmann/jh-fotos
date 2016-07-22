@@ -64,7 +64,8 @@
         max-width: 100%
         //filter: blur(0px) brightness(100%)
         +filter(blur(0px) brightness(100%) saturate(100%))
-        +transition(filter 400ms)
+        +transform(scale(1))
+        +transition(all 400ms)
 
       &.grey
         img
@@ -77,13 +78,17 @@
       width: 100%
 
     .thumb-overlay
+      min-height: 33%
       +position(absolute)
+      top: auto
       +align-items(center)
       +justify-content(space-around)
       +display(flex)
-      display: none
-      //background: fade-out($accent, 1)
+      +display(none)
+      //background: fade-out($accent, 0.5)
+      background: fade-out(black, 0.5)
       text-align: center
+      //+filter(blur(10px))
       @extend %animationstart_#{$animation}
 
       strong
@@ -104,6 +109,7 @@
       .thumb-unit
         img
           +filter(blur(0px) brightness(110%) saturate(100%))
+          +transform(scale(1.1))
 
 
 .work-container
