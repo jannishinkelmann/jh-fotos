@@ -1,24 +1,19 @@
-html body div.spacer
+.spacer
   height: 200px
   position: relative
   z-index: -21
+  display: none
 
-  @media (max-width: 1024px)
-    display: none
-
-footer
-  background-attachment: fixed
-  background-color: black
+.parallax-footer
   padding: 100px 0
   position: fixed
   width: 100%
   bottom: -80px
   z-index: -20
 
-  @media (max-width: 1024px)
-    position: static
-    padding: 0
-    bottom: auto
+footer
+  background-color: black
+  position: relative
 
   .lockup
     padding: 50px 30px

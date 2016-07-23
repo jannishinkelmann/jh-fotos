@@ -57,7 +57,6 @@
 
     .thumb-unit
       display: block
-      overflow: hidden
 
       img
         display: block
@@ -102,15 +101,19 @@
         line-height: 1.2
 
     &:hover
+      z-index: 3
+
       .thumb-overlay
-        z-index: 2
+        z-index: 5
         @extend %#{$animation}
 
       .thumb-unit
         img
+          box-shadow: 0px 0px 30px black
+          position: relative
+          z-index: 4
           +filter(blur(0px) brightness(110%) saturate(100%))
-          +transform(scale(1.1))
-
+          +transform(scale(1.06))
 
 .work-container
   max-width: 600px
@@ -135,6 +138,11 @@
       max-width: 100%
       margin: 20px auto
       cursor: pointer
+      +transition(all 200ms ease-in-out)
+
+      &:hover
+        box-shadow: 0 0 30px black
+        +transform(scale(1.05))
 
     .container-vid
       position: relative

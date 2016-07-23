@@ -46,6 +46,8 @@ function parallax(){
     var parallaxNav = $('header nav');
 
     parallaxBg.css('position', 'fixed');
+    $('footer').addClass('parallax-footer');
+    $('.spacer').css('display', 'block');
 
     $(window).scroll(function(){
       wScroll = $(this).scrollTop();
