@@ -17,9 +17,12 @@ function main(){
 }
 
 function loadMainImg(){
+  $('html').css('background', 'black');
   $('body').hide();
   loadSprite('assets/img/hero-bg.jpg', function(){
-      $('body').fadeIn(800);
+      $('body').fadeIn(800, function(){
+        $('html').css('background', 'none');
+      });
       main();
   })
 }
