@@ -29,3 +29,6 @@ Temporary Items
 
 .sass-cache
 _site/
+config.codekit
+
+*.codekit
