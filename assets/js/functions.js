@@ -1,4 +1,5 @@
 var tAnimation = 400;
+loadMainImg();
 
 $(function() {
 	smoothScroll(tAnimation);
@@ -14,6 +15,13 @@ $(function() {
 	$('textarea').autosize();
 
 });
+
+function loadMainImg(){
+  $('body').hide();
+  loadSprite('assets/img/hero-bg.jpg', function(){
+      $('body').fadeIn(400);
+  })
+}
 
 function parallax(){
   if($(window).width() > 1024){
@@ -58,6 +66,7 @@ function parallax(){
       }
 
       if(scrollPx!=lastPositionPx){
+
         if(scrollPercent<105){
 
           currentPosNav = Math.floor(wScroll/1.2);
@@ -374,6 +383,22 @@ function fetchNext(currentImgObj){
   }
 }
 
+function loadSprite(src, callback) {
+    var sprite = new Image();
+    sprite.onload = callback;
+    sprite.src = src;
+}
+
+/*
+function loadSprite(src) {
+    var deferred = $.Deferred();
+    var sprite = new Image();
+    sprite.onload = function() {
+        deferred.resolve();
+    };
+    sprite.src = src;
+    return deferred.promise();
+}*/
 
 /*!
 	Autosize 1.18.12
