@@ -17,9 +17,6 @@ $(function() {
 
 function parallax(){
   if($(window).width() > 1024){
-
-    $('header .background-wrapper').css('position', 'fixed');
-
     var lastPositionPercent = 0;
     var lastPositionPx = 0;
 
@@ -32,9 +29,14 @@ function parallax(){
     var lastPosNav = 0;
     var currentPosNav = 0;
 
+    var lastBlur = 0;
+    var currentBlur = 0;
+
     var parallaxBg = $('header .background-wrapper');
     var parallaxLogo = $('header .content');
     var parallaxNav = $('header nav');
+
+    parallaxBg.css('position', 'fixed');
 
     $(window).scroll(function(){
       wScroll = $(this).scrollTop();
@@ -42,44 +44,35 @@ function parallax(){
       scrollPx = Math.floor(wScroll);
 
       if(scrollPercent!=lastPositionPercent){
+        if(scrollPercent<105){
 
-        if(scrollPercent>115){
-          if(lastPositionPercent<=115){
-            parallaxBg.css('display', 'none');
-            console.log('background hidden');
+          currentBlur = Math.floor(scrollPercent/3);
+
+          if(currentBlur!=lastBlur){
+            parallaxBg.css('filter', 'blur('+ currentBlur +'px)');
+            parallaxBg.css('-webkit-filter', 'blur('+ currentBlur +'px)');
+            lastBlur = currentBlur;
           }
         }
-        else {
-          if(scrollPercent<30){
-            parallaxBg.css('display', 'block');
-            parallaxBg.css('filter', 'blur('+ scrollPercent +'px)');
-            parallaxBg.css('-webkit-filter', 'blur('+ scrollPercent +'px)');
-
-            console.log('new calculation bg blur: '+scrollPercent);
-          }
-          else{
-            if(lastPositionPercent<30 || lastPositionPercent>115){
-              parallaxBg.css('display', 'block');
-              parallaxBg.css('filter', 'blur('+ 30 +'px)');
-              parallaxBg.css('-webkit-filter', 'blur('+ 30 +'px)');
-
-              console.log('new bg blur from static 30px, lastPositionPercent: '+lastPositionPercent);
-            }
-          }
-        }
-
         lastPositionPercent = scrollPercent;
       }
 
       if(scrollPx!=lastPositionPx){
-        if(scrollPercent<115){
+        if(scrollPercent<105){
 
-          //if()
+          currentPosNav = Math.floor(wScroll/1.2);
+          currentPosLogo = Math.floor(wScroll/2);
 
-          parallaxNav.css('transform', 'translate(0, '+ wScroll/1.2 +'px)');
-          parallaxNav.css('-webkit-transform', 'translate(0, '+ wScroll/1.2 +'px)');
-          parallaxLogo.css('transform', 'translate(0, '+ wScroll/2 +'px)');
-          parallaxLogo.css('-webkit-transform', 'translate(0, '+ wScroll/2 +'px)');
+          if(currentPosNav!=lastPosNav){
+            parallaxNav.css('transform', 'translate(0, '+ currentPosNav +'px)');
+            parallaxNav.css('-webkit-transform', 'translate(0, '+ currentPosNav +'px)');
+            lastPosNav = currentPosNav;
+          }
+          if(currentPosLogo!=lastPosLogo){
+            parallaxLogo.css('transform', 'translate(0, '+ currentPosLogo +'px)');
+            parallaxLogo.css('-webkit-transform', 'translate(0, '+ currentPosLogo +'px)');
+            lastPosLogo = currentPosLogo;
+          }
         }
         lastPositionPx = scrollPx;
       }
@@ -154,7 +147,7 @@ function hideThumbnails(){
 }
 
 function buttonReturn() {
-  if($('.project-load').height()>$(window).height()){
+  if( $('.project-load').height() >= ($(window).height()*0,9) ){
     $('.work-return-end').show();
     $('.work-return-end').css('display', 'flex');
     $('.work-return-end').css('justify-content', 'flex-start');
