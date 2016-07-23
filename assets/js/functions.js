@@ -1,7 +1,7 @@
 var tAnimation = 400;
 loadMainImg();
 
-$(function() {
+function main(){
 	smoothScroll(tAnimation);
   thumbnails();
 	workBelt();
@@ -14,12 +14,13 @@ $(function() {
 	$(".biglink").fitText(1, { maxFontSize: '66px'});
 	$('textarea').autosize();
 
-});
+}
 
 function loadMainImg(){
   $('body').hide();
   loadSprite('assets/img/hero-bg.jpg', function(){
       $('body').fadeIn(800);
+      main();
   })
 }
 
