@@ -19,7 +19,7 @@ $(function() {
 function loadMainImg(){
   $('body').hide();
   loadSprite('assets/img/hero-bg.jpg', function(){
-      $('body').fadeIn(400);
+      $('body').fadeIn(800);
   })
 }
 
@@ -130,7 +130,16 @@ function  workLoad() {
     $('.project-load').html(spinner).load(newHTML);
     $('.project-title').text(newTitle);
 
-    workBeltShiftLeft();
+    var imgs = $('.project-load img');
+    var loaders = [];
+
+    for (img of imgs){
+      loaders.push( loadAllSprites( $(img).attr() ));
+    }
+
+    $.when.apply(null, loaders).done(function() {
+      workBeltShiftLeft();
+    });
   });
 
 }
@@ -389,8 +398,8 @@ function loadSprite(src, callback) {
     sprite.src = src;
 }
 
-/*
-function loadSprite(src) {
+
+function loadAllSprites(src) {
     var deferred = $.Deferred();
     var sprite = new Image();
     sprite.onload = function() {
@@ -398,7 +407,7 @@ function loadSprite(src) {
     };
     sprite.src = src;
     return deferred.promise();
-}*/
+}
 
 /*!
 	Autosize 1.18.12
