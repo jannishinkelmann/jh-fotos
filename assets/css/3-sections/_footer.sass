@@ -1,5 +1,22 @@
+.spacer
+  height: 200px
+
+  @media (max-width: 1024px)
+    display: none
+
 footer
+  background-attachment: fixed
   background-color: black
+  padding: 100px 0
+  position: fixed
+  width: 100%
+  bottom: -80px
+  z-index: -20
+
+  @media (max-width: 1024px)
+    position: static
+    padding: 0
+    bottom: auto
 
   .lockup
     padding: 50px 30px

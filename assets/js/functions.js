@@ -52,7 +52,10 @@ function parallax(){
       scrollPx = Math.floor(wScroll);
 
       if(scrollPercent!=lastPositionPercent){
-        if(scrollPercent<105){
+        if(scrollPercent<120){
+          if(lastPositionPercent>=120){
+            parallaxBg.show()
+          }
 
           currentBlur = Math.floor(scrollPercent/3);
 
@@ -62,12 +65,17 @@ function parallax(){
             lastBlur = currentBlur;
           }
         }
+        else {
+          if(lastPositionPercent<120) {
+            parallaxBg.hide();
+          }
+        }
         lastPositionPercent = scrollPercent;
       }
 
       if(scrollPx!=lastPositionPx){
 
-        if(scrollPercent<105){
+        if(scrollPercent<120){
 
           currentPosNav = Math.floor(wScroll/1.2);
           currentPosLogo = Math.floor(wScroll/2);
