@@ -1,6 +1,6 @@
 ---
 ---
-"Das macht sich ja super!", dachte ich mir, als ich erfahren habe, dass die beiden Bands *Broken Honesty* und *Brixten* an einem Abend nacheinander im *Irish House* Kaiserslautern spielen sollten. Kurzerhand Kontakt aufgenommen und schon ich durfte mit - spitze!
+"Das macht sich ja super!", dachte ich mir, als ich erfahren habe, dass die beiden Bands *Broken Honesty* und *Brixten* an einem Abend nacheinander im *Irish House* Kaiserslautern spielen sollten. Kurzerhand Kontakt aufgenommen und schon durfte ich mit - spitze!
 
 Nachfolgend Bilder von *Broken Honesty*.
 
@@ -12,7 +12,7 @@ Im Rahmen der Konzertfotografie können durchaus auch Porträtaufnahmen der einz
 
 ![Broken Honesty](assets/img/work/brokenhonesty/brokenhonesty3.jpg)
 
-Die Nachbearbeitung ermöglicht es, das Bild neutral zu entwickeln. Aber auch starke Stilisierungen sind möglich und einen interessanten Effekt erzeugen.
+Die Nachbearbeitung ermöglicht es, das Bild neutral zu entwickeln. Aber auch starke Stilisierungen sind möglich, um einen interessanten Effekt erzeugen.
 
 ![Broken Honesty](assets/img/work/brokenhonesty/brokenhonesty4.jpg)
 

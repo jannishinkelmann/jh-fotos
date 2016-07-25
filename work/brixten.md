@@ -2,7 +2,7 @@
 ---
 Oder auch: *Irish House*, die Zweite? Jedenfalls der zweite Auftritt des Abends mit *Broken Honesty* und *Brixten*.
 
-Hier nun Bilder von Brixten.
+Hier nun Bilder von *Brixten*.
 
 ![Brixten](assets/img/work/brixten/brixten1.jpg)
 
