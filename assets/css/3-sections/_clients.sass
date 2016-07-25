@@ -1,5 +1,6 @@
 .section-clients
   position: relative
+  padding-bottom: 1px
 
 .clients-wrap
   display: flex
@@ -74,13 +75,16 @@
 
   .client-logo
     cursor: pointer
+    max-height: 80px
     margin: 0 20px 20px
     padding-bottom: 20px
     border-bottom: 4px solid transparent
     opacity: 0.5
+    //filter: grayscale(0.7) brightness(100%)
 
     &.active-client
       opacity: 1
+      //filter: grayscale(0.7) brightness(120%)
       border-bottom: 4px solid $accent
 
 
