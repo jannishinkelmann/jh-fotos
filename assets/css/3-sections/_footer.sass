@@ -1,0 +1,67 @@
+.spacer
+  height: 200px
+  position: relative
+  z-index: -21
+  display: none
+
+.parallax-footer
+  padding: 100px 0
+  position: fixed
+  width: 100%
+  bottom: -80px
+  z-index: -20
+
+footer
+  background-color: black
+  position: relative
+
+  .lockup
+    padding: 50px 30px
+    +clearfix
+
+    .logo
+      float: left
+      display: inline-block
+      +size(50px)
+      margin: 10px 0 0 30px
+      svg g path
+        fill: rgba(0,0,0,1)
+      svg g circle
+        fill: white
+
+    .content-wrap
+      float: left
+      margin-left: 40px
+
+      .copyright
+        margin-top: 10px
+        text-transform: uppercase
+        font-size: 12px
+        color: rgba(255,255,255,0.5)
+
+        p
+          margin: 0
+
+      nav
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+        a
+          @extend %small-bold
+          color: rgba(255,255,255,0.7)
+          display: inline-block
+          margin-left: 10px
+          margin-right: 10px
+
+          &:hover
+            color: rgba(255,255,255,0.9)
+
+
+  @media (max-width: 640px)
+    .lockup
+      .logo
+        display: none
+
+      .content-wrap
+        margin-left: 0

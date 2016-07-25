@@ -1,0 +1,132 @@
+header
+  position: relative
+  height: 100%
+
+  .background-wrapper
+    background:
+      position: 50% 0
+      repeat: no-repeat
+      size: cover
+      image: url(../img/#{$hero-path})
+      //attachment: fixed
+      blend-mode: normal
+    +position(absolute, 0 0 0 0)
+    //+filter(blur(100px))
+    z-index: -5
+    overflow: hidden
+
+  .main-logo
+    max-height: 50%
+    background-color: rgba(0,0,0,0.5)
+    padding: 15px
+
+
+  .content
+    position: absolute
+    display: inline-block
+    top: 50%
+    left: 50%
+    margin-top: -100px
+    margin-left: -150px
+    width: 300px
+    height: auto
+
+
+  .button-scroll
+    +size(40px 40px)
+    position: relative
+    margin: 50px auto 0
+    display: block
+    overflow: visible
+    z-index: 0
+
+    .icon
+      +size(40px 40px)
+
+      path
+        fill: #bbb
+        //fill: $accent
+
+    &:hover
+      .icon path
+        //fill: #fff
+        fill: $accent-light
+
+  .logo
+    display: none
+    +size(50px)
+    float: left
+    margin: 10px 0 0 30px
+    svg g path
+      fill: rgba(0,0,0,1)
+    svg g circle
+      fill: rgba(255,255,255,0.7)
+  nav
+    padding: 30px 15px 0 0
+    position: absolute
+    min-width: 300px
+    a
+      display: inline-block
+      margin-left: 15px
+      padding: 2px 9px
+      background-color: rgba(255,255,255,0.3)
+
+      color: rgba(0,0,0,.8)
+      @extend %small-bold
+
+      &:hover
+        color: rgba(0,0,0,1)
+        //color: $accent
+        background-color: rgba(255,255,255,0.5)
+
+  h1
+    text-align: center
+    font:
+      size: 72px
+      weight: 700
+    color: white
+    text-transform: uppercase
+    letter-spacing: 0.05em
+    margin-bottom: 20px
+    clear: both
+
+
+    span
+      display: inline-block
+      padding: 0.2em 0.5em
+      border: white solid 10px
+
+  .kicker
+    @extend %small-bold
+    margin: 20px auto
+    text-align: center
+    letter-spacing: 0.05em
+    color: white
+    line-height: 1
+
+@media (max-width: 640px)
+  header
+    .logo
+      left: 50%
+      top: 20px
+      +transform(translate(-50%, 0))
+      margin: 0
+
+    .content-wrapper nav
+      float: none
+      text-align: center
+      left: 50%
+      +transform(translate(-50%, 0))
+
+      a
+        margin-bottom: 5px
+
+    h1
+      padding-top: 0px
+
+    .main-logo
+      width: auto
+      margin: 15px
+
+    .button-scroll
+      margin: 0 auto

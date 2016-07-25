@@ -1,0 +1,30 @@
+<section class="section section-contact">
+  <div class="content-wrapper">
+    <h3 id="contact">Kontakt</h3>
+
+    <div class="adress">
+      <span class="name">Jannis Hinkelmann</span>
+      <span class="street">Auf Krämel 45</span>
+      <span class="city">67742 Lauterecken</span>
+    </div>
+
+    <div class="phone">
+      <span class="number">0151 51025140</span>
+    </div>
+
+    <a class="biglink" href="mailto:{{ site.data.settings.email }}">{{ site.data.settings.email }}</a>
+
+    <hr class="bar">
+
+
+    <div class="social-links">
+      {% for link in site.data.settings.social %}
+      <a href="{{ link.link }}" target="_blank" class="icon-{{ link.icon }}"></a>
+      {% endfor %}
+      <a href="http://flickr.com/people/jannis-hinkelmann" target="_blank" class="icon-flickr">
+        {% include icons/icon-flickr.html %}
+      </a>
+    </div>
+
+  </div>
+</section>

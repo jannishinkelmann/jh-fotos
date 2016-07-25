@@ -1,0 +1,97 @@
+#-------------------------------
+# General Site Settings
+
+title: JH Fotos
+description: Fotografie // Videografie
+email: jannis@jh-fotos.de
+
+# NOTE: The Logo and Background image are defined in the all.sass document.
+
+menu:
+- {name: Über, url: '#about-me'}
+- {name: Projekte, url: '#work'}
+#- {name: Partner, url: '#clients'}
+- {name: Kontakt, url: '#contact'}
+
+#-------------------------------
+# SEO Section
+
+# NOTE: Providing SEO information will make this website more searchable on the internet.
+
+seo:
+  description: 'Offizielle Website von Jannis Hinkelmann, Fotograf aus Lauterecken'
+  rel-author: 'https://plus.google.com/u/0/115849271503758637116/'
+  rel-publisher: 'https://plus.google.com/u/0/115849271503758637116/'
+
+#-------------------------------
+# Google Analytics Section
+
+# Analytics helps you understand who visits your website.
+# Learn more at: http://support.google.com/analytics/answer/1008065
+
+# NOTE: If you want to use Google Analytics for basic web tracking: Just uncomment and enter your UA-Code here.
+
+#google-analytics-ua: UA-XXXXXX-X
+
+#-------------------------------
+# About Section
+
+# NOTE: The avatar is defined in the all.sass document.
+
+blurb: >
+  **Jannis fotografiert leidenschaftlich** *Events* und *Portrait*.
+  Dabei liegt sein Fokus in der Schaffung bleibender Erinnerungen für andere.
+  Er geht aber auch gerne seinen eigenen Ideen nach und postet Natur- und Landschaftsbilder.
+
+skills:
+- {name: Ideen & Kreativität, value: 5}
+- {name: Kommunikation, value: 7}
+- {name: Bildgestaltung, value: 8}
+- {name: Nachbearbeitung, value: 6}
+- {name: Lernfähigkeit, value: 7}
+- {name: Zuverlässigkeit, value: 9}
+
+#-------------------------------
+# Work Section
+
+projects:
+
+- {name: Herbstfarben, folder: 'jessi', file: 'work/proj-jessi.html'}
+- {name: Sommerabend-Stimmung, folder: 'anna', file: 'work/proj-anna.html'}
+- {name: FadeOut, folder: 'fadeoutphoto', file: 'work/proj-fadeoutphoto.html'}
+- {name: Broken Honesty, folder: 'brokenhonesty', file: 'work/proj-brokenhonesty.html'}
+- {name: Brixten, folder: 'brixten', file: 'work/proj-brixten.html'}
+- {name: Videodreh mit FadeOut, folder: 'fadeoutvideo', file: 'work/proj-fadeoutvideo.html'}
+
+
+
+
+#-------------------------------
+# Clients Section
+
+clients:
+- {avatar: 'face-aaroni.jpg',
+  name: 'Scott Summers',
+  title: 'Director of Design, OnToText Ind.',
+  quote: '<p><strong>While we all felt that Travis was a great</strong> asset to our team — and really worked hard to understand our products from the point of view of the customer — we also all agree he should shower more often.</p>',
+  logo: 'logo1.png'}
+- {avatar: 'face-atariboy.jpg',
+  name: 'Hank McCoy',
+  title: 'Eater of Salad, Antartica Int.',
+  quote: '<p><strong>Working with Travis was the highlight of my career.</strong> Other moments of note were collecting the largest number of paperclips in the office, and winning a trophy for saying "uh huh, and then what?" 30 times in a row to my girlfriend without her noticing.</p>',
+  logo: 'logo2.png'}
+- {avatar: 'face-jackiesaik.jpg',
+  name: 'Stacy Lang',
+  title: 'Social Media Girl, Quebec Int.',
+  quote: '<p><strong>Yea, I guess hes good at computers or something,</strong> but let me ask you this: If a cat always lands on its feet, and buttered bread always lands butter side down, what would happen if you tied buttered bread on top of a cat?</p>',
+  logo: 'logo3.png'}
+
+
+#-------------------------------
+# Contact Section
+
+social:
+- {icon: 'twitter', link: 'http://twitter.com/j_hinkelmann'}
+- {icon: 'facebook', link: 'https://facebook.com/jannishinkelmann'}
+
+# social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'

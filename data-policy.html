@@ -1,0 +1,43 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="de" class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.data.settings.seo.description }}">
+  <meta name="page-topic" content="Dienstleistung">
+  <meta name="keywords" content="Fotograf, Konzert, Event, Portrait, Lauterecken, Kusel">
+  <meta rel="author" href="{{ site.data.settings.seo.rel-author }}">
+  <meta rel="publisher" href="{{ site.data.settings.seo.rel-publisher }}">
+  <meta name="copyright" content=" (c) Jannis Hinkelmann">
+  <meta name="audience" content="alle">
+  <meta http-equiv="language" content="deutsch, de">
+  <meta name="robots" content="noindex, nofollow">
+
+  <title>{{ site.data.settings.title }} - Datenschutzerklärung</title>
+
+  <link rel="stylesheet" href="../assets/css/all.css">
+  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  {% include analytics.html %}
+</head>
+<body class="data-policy">
+  <section class="section">
+    <a href="#" class="icon icon-cross"> {% include icons/icon-cross.html %} </div></a>
+
+    <h1>Datenschutzerklärung</h1>
+    <h2>Kontaktformular</h2>
+    <p>Zur Übermittlung der Daten aus dem Kontaktformular wird der externe Service <a href="https://formspree.io">Formspree</a> verwendet, wofür deren Datenschutzbestimmungen gelten. Wenn du mir per Kontaktformular Anfragen zukommen lässt, werden deine Angaben aus dem Anfrageformular inklusive der von dir dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei mir gespeichert. Diese Daten gebe ich nicht ohne deine Einwilligung weiter.</p>
+  </section>
+
+  <script src="../assets/js/jquery/dist/jquery.min.js"></script>
+  <script>
+    $('.data-policy a.icon-cross').click(function(){
+      window.close();
+    });
+  </script>
+</body>
+</html>

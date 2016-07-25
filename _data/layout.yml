@@ -1,0 +1,24 @@
+# Layout settings
+
+animation: "fadeIn"
+
+# Images
+
+logo: "logo.svg"
+hero: "hero-bg.jpg"
+hero-footer: "hero-bg-footer.jpg"
+avatar: "avatar.jpg"
+
+# Colors
+
+accent: "lighten(#c99065, 10%)"
+#accent: "#5ABFD6"
+#accent: "#45BE7B"
+#accent: "#333"
+#accent: "#bfbbd9"
+#accent: "lighten(#d19a66, 5%)"
+
+textColor: "#DDD"
+headlineColor: "#EEE"
+bgcolor: "#303035"
+documentBackgroundColor: "#222"
