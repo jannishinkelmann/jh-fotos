@@ -113,7 +113,7 @@
           position: relative
           z-index: 4
           +filter(blur(0px) brightness(110%) saturate(100%))
-          +transform(scale(1.06))
+          +transform(scale(1.04))
 
 .work-container
   max-width: 600px
@@ -142,7 +142,7 @@
 
       &:hover
         box-shadow: 0 0 30px black
-        +transform(scale(1.05))
+        +transform(scale(1.04))
 
     .container-vid
       position: relative
@@ -152,6 +152,12 @@
       width: 100%
       height: auto
       margin-bottom: 20px
+      cursor: pointer
+      +transition(all 200ms ease-in-out)
+
+      &:hover
+        box-shadow: 0 0 30px black
+        +transform(scale(1.04))
 
     .container-vid iframe
       position: absolute
