@@ -40,7 +40,7 @@ seo:
 
 blurb: >
   **Jannis fotografiert leidenschaftlich** *Events* und *Portrait*.
-  Dabei liegt sein Fokus in der Schaffung bleibender Erinnerungen für andere.
+  Dabei liegt sein Fokus auf der Schaffung bleibender Erinnerungen für andere.
   Er geht aber auch gerne seinen eigenen Ideen nach und postet Natur- und Landschaftsbilder.
 
 # skills:
@@ -86,6 +86,6 @@ clients:
 
 social:
 - {icon: 'twitter', link: 'http://twitter.com/j_hinkelmann'}
-- {icon: 'facebook', link: 'https://facebook.com/jannishinkelmann'}
+- {icon: 'facebook', link: 'https://facebook.com/jhfotosde'}
 
 # social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
