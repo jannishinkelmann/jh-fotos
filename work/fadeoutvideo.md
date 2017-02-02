@@ -6,6 +6,8 @@ Dieser Gig sollte etwas Besonderes werden und ein Meilenstein für die Auftritte
 
 Um Livekonzerte festzuhalten, ist naturgemäß das Video ein äußerst geeignetes Medium, da man sowohl die Lichteffekte, Emotionen und Performance visuell - aber eben auch die Musik und Atmosphäre akustisch - gleichermaßen abbilden kann.
 
+<div class="container-vid"><iframe width="560" height="315" src="https://www.youtube.com/embed/wFDxw8AqsBs" frameborder="0" allowfullscreen></iframe></div>
+
 Durch verschiedene Kameraperspektiven und den live im Konzert aufgezeichneten Ton kann man dem Zuschauer das Ereignis nahezu so vermitteln, als wäre er mitten im Konzertsaal mit dabei.
 
 Dabei lassen sich Medleys, Promotionvideos oder auch Musikvideos eines ganzen Songs erstellen, wie im nachfolgenden Beispiel mit "Like the Way I Do".

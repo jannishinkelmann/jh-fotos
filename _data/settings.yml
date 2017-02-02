@@ -39,7 +39,7 @@ seo:
 # NOTE: The avatar is defined in the all.sass document.
 
 blurb: >
-  **Jannis fotografiert leidenschaftlich** *Event* und *Portrait*.
+  **Jannis fotografiert leidenschaftlich** *Konzert* und *Portrait*.
   Dabei liegt sein Fokus auf der Schaffung bleibender Erinnerungen für andere.
   Er geht aber auch gerne seinen eigenen Ideen nach und postet Natur- und Landschaftsbilder.
 
@@ -55,12 +55,12 @@ blurb: >
 
 projects:
 
-- {name: Herbstfarben, folder: 'jessi', file: 'work/proj-jessi.html'}
-- {name: Sommerabend-Stimmung, folder: 'anna', file: 'work/proj-anna.html'}
-- {name: FadeOut, folder: 'fadeoutphoto', file: 'work/proj-fadeoutphoto.html'}
-- {name: Broken Honesty, folder: 'brokenhonesty', file: 'work/proj-brokenhonesty.html'}
-- {name: Brixten, folder: 'brixten', file: 'work/proj-brixten.html'}
-- {name: Videodreh mit FadeOut, folder: 'fadeoutvideo', file: 'work/proj-fadeoutvideo.html'}
+- {name: Herbstfarben, folder: 'jessi', file: 'work/proj-jessi.html', thumb: 'thumb.jpg'}
+- {name: Sommerabend-Stimmung, folder: 'anna', file: 'work/proj-anna.html', thumb: 'thumb.jpg'}
+- {name: FadeOut, folder: 'fadeoutphoto', file: 'work/proj-fadeoutphoto.html', thumb: 'thumb.jpg'}
+- {name: Broken Honesty, folder: 'brokenhonesty', file: 'work/proj-brokenhonesty.html', thumb: 'thumb.jpg'}
+- {name: Brixten, folder: 'brixten', file: 'work/proj-brixten.html', thumb: 'thumb.jpg'}
+- {name: Videodreh mit FadeOut, folder: 'fadeoutvideo', file: 'work/proj-fadeoutvideo.html', thumb: 'thumb.jpg'}
 
 
 
@@ -72,7 +72,7 @@ clients:
 - {avatar: 'thomas.jpg',
   name: 'Thomas Schütz',
   title: 'Geschäftsführer, <a href="http://www.schuetz-sound-and-light.de/" target="_blank">Schütz Sound&Light</a>',
-  quote: '<p><strong>Inmensae subtilitatis, obscuris</strong> et malesuada fames. Quam diu etiam furor iste tuus nos eludet? Quisque ut dolor gravida, placerat libero vel, euismod. Mercedem aut nummos unde unde extricat, amaras.</p>',
+  quote: '<p><strong>Bei einem Projekt ist eine gute Absprache</strong> und eine super Zusammenarbeit wichtig für den Erfolg. Diese Punkte setzt Jannis jederzeit zu 100% um und entwickelt so ein einmaliges Ergebnis.</p>',
   logo: 'schuetz-logo.png'}
 - {avatar: 'jackdice.jpg',
   name: 'Jack Dice',

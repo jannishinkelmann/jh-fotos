@@ -48,6 +48,8 @@ function parallax(){
     var parallaxLogo = $('header .content');
     var parallaxNav = $('header nav');
 
+    var mainLogo = $('header .main-logo');
+
     parallaxBg.css('position', 'fixed');
     $('footer').addClass('parallax-footer');
     $('.spacer').css('display', 'block');
@@ -68,6 +70,8 @@ function parallax(){
           if(currentBlur!=lastBlur){
             parallaxBg.css('filter', 'blur('+ currentBlur +'px)');
             parallaxBg.css('-webkit-filter', 'blur('+ currentBlur +'px)');
+
+            mainLogo.css('background-color', 'rgba(0,0,0,'+ (0.5+currentBlur*0.03) +')');
             lastBlur = currentBlur;
           }
         }
