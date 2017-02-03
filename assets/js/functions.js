@@ -56,7 +56,8 @@ function parallax(){
 
     $(window).scroll(function(){
       wScroll = $(this).scrollTop();
-      scrollPercent = Math.floor(wScroll / $(window).height() * 100);
+      wHeight = $(window).height();
+      scrollPercent = Math.floor(wScroll / wHeight * 100);
       scrollPx = Math.floor(wScroll);
 
       if(scrollPercent!=lastPositionPercent){
@@ -71,7 +72,11 @@ function parallax(){
             parallaxBg.css('filter', 'blur('+ currentBlur +'px)');
             parallaxBg.css('-webkit-filter', 'blur('+ currentBlur +'px)');
 
-            mainLogo.css('background-color', 'rgba(0,0,0,'+ (0.5+currentBlur*0.03) +')');
+            parallaxLogo.css('opacity', (1-currentBlur*0.04) );
+            parallaxNav.css('opacity', (1-currentBlur*0.06))
+
+            //mainLogo.css('background-color', 'rgba(0,0,0,'+ (0.9-currentBlur*0.04) +')');
+            mainLogo.css('box-shadow', '0px 0px '+ (60-currentBlur*2) +'px rgba(0,0,0,'+ (1-currentBlur*0.04) +')');
             lastBlur = currentBlur;
           }
         }
@@ -86,15 +91,8 @@ function parallax(){
       if(scrollPx!=lastPositionPx){
 
         if(scrollPercent<120){
-
-          currentPosNav = Math.floor(wScroll/1.2);
           currentPosLogo = Math.floor(wScroll/2);
 
-          if(currentPosNav!=lastPosNav){
-            parallaxNav.css('transform', 'translate(0, '+ currentPosNav +'px)');
-            parallaxNav.css('-webkit-transform', 'translate(0, '+ currentPosNav +'px)');
-            lastPosNav = currentPosNav;
-          }
           if(currentPosLogo!=lastPosLogo){
             parallaxLogo.css('transform', 'translate(0, '+ currentPosLogo +'px)');
             parallaxLogo.css('-webkit-transform', 'translate(0, '+ currentPosLogo +'px)');
