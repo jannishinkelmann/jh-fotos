@@ -38,11 +38,15 @@ function parallax(){
 
     var lastPosLogo = 0;
     var currentPosLogo = 0;
+    var lastPosBg = 0;
+    var currentPosBg = 0;
     var lastPosNav = 0;
     var currentPosNav = 0;
 
     var lastBlur = 0;
     var currentBlur = 0;
+    var lastOpacity = 0;
+    var currentOpacity = 0;
 
     var parallaxBg = $('header .background-wrapper');
     var parallaxLogo = $('header .content');
@@ -66,23 +70,27 @@ function parallax(){
             parallaxBg.show()
           }
 
-          currentBlur = Math.floor(scrollPercent/3);
+          currentBlur = Math.floor(scrollPercent/6);
+          currentOpacity = 2-scrollPercent*0.035;
 
           if(currentBlur!=lastBlur){
             parallaxBg.css('filter', 'blur('+ currentBlur +'px)');
             parallaxBg.css('-webkit-filter', 'blur('+ currentBlur +'px)');
-
-            parallaxLogo.css('opacity', (1-currentBlur*0.04) );
-            parallaxNav.css('opacity', (1-currentBlur*0.06))
-
-            //mainLogo.css('background-color', 'rgba(0,0,0,'+ (0.9-currentBlur*0.04) +')');
-            mainLogo.css('box-shadow', '0px 0px '+ (60-currentBlur*2) +'px rgba(0,0,0,'+ (1-currentBlur*0.04) +')');
             lastBlur = currentBlur;
           }
+
+          if(currentOpacity!=lastOpacity){
+            parallaxLogo.css('opacity', currentOpacity );
+            parallaxNav.css('opacity', currentOpacity );
+            lastOpacity = currentOpacity;
+          }
         }
+
         else {
           if(lastPositionPercent<120) {
             parallaxBg.hide();
+            //parallaxBg.css('filter', 'blur(0px)');
+            //parallaxBg.css('-webkit-filter', 'blur(0px)');
           }
         }
         lastPositionPercent = scrollPercent;
@@ -92,11 +100,17 @@ function parallax(){
 
         if(scrollPercent<120){
           currentPosLogo = Math.floor(wScroll/2);
+          currentPosBg = Math.floor(-(wScroll/6));
 
           if(currentPosLogo!=lastPosLogo){
             parallaxLogo.css('transform', 'translate(0, '+ currentPosLogo +'px)');
             parallaxLogo.css('-webkit-transform', 'translate(0, '+ currentPosLogo +'px)');
             lastPosLogo = currentPosLogo;
+          }
+          if(currentPosBg!=lastPosBg){
+            parallaxBg.css('transform', 'translate(0, '+ currentPosBg +'px)');
+            parallaxBg.css('-webkit-transform', 'translate(0, '+ currentPosBg +'px)');
+            lastPosBg = currentPosBg;
           }
         }
         lastPositionPx = scrollPx;

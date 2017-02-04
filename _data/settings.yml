@@ -2,7 +2,7 @@
 # General Site Settings
 
 title: JH Fotos
-description: Fotografie // Videografie
+description: Concert & Portrait
 email: jannis@jh-fotos.de
 
 # NOTE: The Logo and Background image are defined in the all.sass document.
@@ -10,7 +10,7 @@ email: jannis@jh-fotos.de
 menu:
 - {name: Über, url: '#about-me'}
 - {name: Projekte, url: '#work'}
-- {name: Partner, url: '#clients'}
+- {name: Referenzen, url: '#clients'}
 - {name: Kontakt, url: '#contact'}
 
 #-------------------------------

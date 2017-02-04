@@ -23,7 +23,7 @@ footer
       float: left
       display: inline-block
       +size(50px)
-      margin: 10px 0 0 30px
+      margin: 0 0 0 30px
       svg g path
         fill: rgba(0,0,0,1)
       svg g circle
@@ -51,8 +51,7 @@ footer
           @extend %small-bold
           color: rgba(255,255,255,0.7)
           display: inline-block
-          margin-left: 10px
-          margin-right: 10px
+          margin-right: 20px
 
           &:hover
             color: rgba(255,255,255,0.9)
@@ -62,6 +61,8 @@ footer
     .lockup
       .logo
         display: none
+        //+size(30px)
+        //margin-left: 0
 
       .content-wrap
         margin-left: 0

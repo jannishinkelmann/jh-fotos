@@ -4,7 +4,7 @@ header
 
   .background-wrapper
     background:
-      position: 50% 50%
+      position: 75% 78%
       repeat: no-repeat
       size: cover
       image: url(../img/#{$hero-path})
@@ -19,7 +19,7 @@ header
     max-height: 50%
     background-color: rgba(0,0,0,0.9)
     padding: 15px
-    box-shadow: 0px 0px 60px rgba(0,0,0,1)
+    box-shadow: 0px 0px 30px rgba(0,0,0,1)
 
 
   .content
@@ -35,12 +35,17 @@ header
 
   .button-scroll
     +size(50px 50px)
-    position: relative
-    margin: 50px auto 0
+    padding: 8px
+    border-radius: 25%
+    position: absolute
+    bottom: 0
+    right: 10px
+    margin: 0 0 -16px -33px
     display: block
     overflow: visible
-    z-index: 0
-
+    z-index: 10
+    background-color: $documentBackgroundColor
+    box-shadow: 5px -10px 20px rgba(15,15,15,0.8)
     .icon
       +size(50px 50px)
 
@@ -51,7 +56,7 @@ header
     &:hover
       .icon path
         //fill: #fff
-        fill: $accent-light
+        fill: $accent
 
 
 
@@ -76,16 +81,15 @@ header
       display: inline-block
       margin-left: 15px
       padding: 2px 9px
-      background-color: rgba(0,0,0,0.6)
-
+      background-color: rgba(0,0,0,0.7)
+      box-shadow: 0px 0px 7px rgba(30,30,30,0.8)
       color: rgba(255,255,255,1)
+
       @extend %small-bold
 
       &:hover
-        color: rgba(0,0,0,1)
-        //color: $accent
-        box-shadow: 0px 0px 10px rgba(0,0,0,1)
-        background-color: rgba(255,255,255,0.8)
+        color: black
+        background-color: rgba(255,255,255,0.9)
 
   h1
     text-align: center
@@ -133,8 +137,19 @@ header
       padding-top: 0px
 
     .main-logo
-      width: auto
-      margin: 15px
+      //width: auto
+      //height: 50px
+      //margin: 15px
+      margin: auto
+      max-width: 50%
+      padding: 5px
+      box-shadow: 0px 0px 10px rgba(0,0,0,1)
 
     .button-scroll
-      margin: 0 auto
+      +size(40px 40px)
+      margin: 0 0 -10px -25px
+      padding: 5px
+      box-shadow: 2px -5px 10px rgba(15,15,15,0.7)
+
+      .icon
+        +size(40px 40px)
