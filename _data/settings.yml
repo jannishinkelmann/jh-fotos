@@ -81,8 +81,8 @@ clients:
   logo: 'fadeout-logo.png'}
 - {avatar: 'qugit.jpg',
   name: 'QugIT GbR',
-  title: '',
-  quote: '<p><strong>Jannis setzt jeden in ein gutes Licht.</strong> Bei Ihm erhält man das rundum sorglos Paket. Sogar aus einem chaotischen Haufen wie uns hat er das Beste rausgeholt und super Bilder gemacht.</p>',
+  title: '<a href="https://qugit.net/" target="_blank">qugit.net</a>',
+  quote: '<p><strong>Jannis setzt jeden in ein gutes Licht.</strong> Bei ihm erhält man das rundum sorglos Paket. Sogar aus einem chaotischen Haufen wie uns hat er das Beste rausgeholt und super Bilder gemacht.</p>',
   logo: 'qugit-logo.png'}
 
 
