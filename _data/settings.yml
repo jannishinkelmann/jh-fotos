@@ -79,9 +79,9 @@ clients:
   title: 'Gitarrist, <a href="http://www.fadeout-rock.de/" target="_blank">FadeOut Rock Cover</a>',
   quote: '<p><strong>Mit Jannis kann man einfach wunderbar zusammenarbeiten.</strong> Durch seinen Sinn fürs Detail und seine Kreativität, die er bei jedem Projekt individuell mit einfließen lässt, entsteht bei jedem Foto und jedem Video ein kleines Kunstwerk.</p>',
   logo: 'fadeout-logo.png'}
-- {avatar: 'flo.jpg',
-  name: 'Florian Schmidt',
-  title: 'Mitgründer, <a href="https://qugit.net/" target="_blank">QugIT GbR</a>',
+- {avatar: 'qugit.jpg',
+  name: 'QugIT GbR',
+  title: '',
   quote: '<p><strong>Jannis setzt jeden in ein gutes Licht.</strong> Bei Ihm erhält man das rundum sorglos Paket. Sogar aus einem chaotischen Haufen wie uns hat er das Beste rausgeholt und super Bilder gemacht.</p>',
   logo: 'qugit-logo.png'}
 
